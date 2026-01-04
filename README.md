@@ -1,18 +1,5 @@
-function validate(){
-  const email = document.getElementById('email').value;
-  const pass = document.getElementById('password').value;
-  const msg = document.getElementById('msg');
+# JS Login Form Validation
 
-  const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+A simple login form with client-side validation using JavaScript.
 
-  if(!emailValid){
-    msg.innerText = 'Invalid email address';
-    msg.style.color = 'red';
-  }else if(pass.length < 6){
-    msg.innerText = 'Password must be at least 6 characters';
-    msg.style.color = 'orange';
-  }else{
-    msg.innerText = 'Login successful ✔';
-    msg.style.color = 'lightgreen';
-  }
-}
+This project demonstrates email validation, password checks, and user feedback.
